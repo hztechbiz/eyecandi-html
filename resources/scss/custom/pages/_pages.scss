@@ -1,0 +1,41 @@
+.brands{
+    padding-bottom: 0;
+  .image-brand{
+    width: 93px;
+    height: 93px;
+    background-color: grey;
+    border-radius: 66px;
+    margin: 2px auto;
+  }
+  .brand-company{
+    color:#6c757d;
+  }
+}
+.mt-20{
+  margin-top: 20px;
+}
+.frames{
+  .image-frames{
+    width: 100%;
+    height: 181px;
+    background-color: grey;
+    //border-radius: 66px;
+    //margin: 2px auto;
+  }
+  .frame-title{
+    color:  #6c757d;
+    width: 100%;
+    margin:0;
+    margin-bottom: 3px;
+  }
+  .frame-id{
+    color:  #6c757d;
+    width: 100%;
+    margin:0;
+    margin-bottom: 3px;
+  }
+  .frame-description{
+    margin: 0;
+    margin-bottom: 3px;
+  }
+}
