@@ -9,7 +9,7 @@
                     <div class="card-body p-4">
                         <div class="text-center w-75 m-auto">
                             <a href="/">
-                                <span><img src="{{ URL::asset('assets/images/logo.png') }}" alt="" height="22"></span>
+                                <span><img src="{{ URL::asset('assets/images/logo.png') }}" alt="" height="44"></span>
                             </a>
                             <p class="text-muted mb-4 mt-3">Enter your email address and password to access admin panel.</p>
                         </div>
