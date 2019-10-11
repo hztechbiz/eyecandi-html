@@ -36,7 +36,9 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="col-md-1 offset-5">
+                    <button class="btn btn-primary">Add New</button>
+                </div>
             </div>
         </div>
     </div>
