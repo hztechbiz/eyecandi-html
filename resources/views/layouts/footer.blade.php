@@ -3,7 +3,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				{{date('Y') - 1}} - {{ date('Y') }} &copy; Minton theme by <a href="">Coderthemes</a> 
+				{{date('Y') - 1}} - {{ date('Y') }} &copy; Eyecandi by <a href="">HZTech</a>
 			</div>
 			<div class="col-md-6">
 				<div class="text-md-right footer-links d-none d-sm-block">

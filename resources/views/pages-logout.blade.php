@@ -11,7 +11,7 @@
 
                         <div class="text-center w-75 m-auto">
                             <a href="/">
-                                <span><img src="{{ URL::asset('assets/images/logo-dark.png') }}" alt="" height="22"></span>
+                                <span><img src="{{ URL::asset('assets/images/logo.png') }}" alt="" height="42"></span>
                             </a>
                         </div>
 
@@ -60,6 +60,6 @@
 
 
 <footer class="footer footer-alt">
-    {{date('Y') - 1}} - {{ date('Y') }} &copy; Minton theme by <a href="" class="text-muted">Coderthemes</a>
+    {{date('Y') - 1}} - {{ date('Y') }} &copy; Eyecandi by <a href="" class="text-muted">Hztech</a>
 </footer>
 @endsection

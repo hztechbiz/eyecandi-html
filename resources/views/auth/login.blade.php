@@ -95,6 +95,6 @@
 <!-- end page -->
 
 <footer class="footer footer-alt">
-    {{date('Y') - 1}} - {{ date('Y') }} &copy; Minton theme by <a href="" class="text-muted">Coderthemes</a>
+    {{date('Y') - 1}} - {{ date('Y') }} &copy; Eyecandi by <a href="" class="text-muted">HZTech</a>
 </footer>
 @endsection
