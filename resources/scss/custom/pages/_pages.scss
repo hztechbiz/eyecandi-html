@@ -10,11 +10,28 @@
   .brand-company{
     color:#6c757d;
   }
+  .btn-frame{
+    display: block;
+    margin: 0 auto;
+    background: #827c7c;
+  }
 }
 .mt-20{
   margin-top: 20px;
 }
+.mt-5{
+  margin-top: 5px !important;
+}
+.color-grey{
+  color:#6c757d;
+}
+.frame-topbar{
+  padding: 10px;
+  background: #ffff;
+  margin-bottom: 20px;
+}
 .frames{
+
   .image-frames{
     width: 100%;
     height: 181px;
@@ -27,15 +44,37 @@
     width: 100%;
     margin:0;
     margin-bottom: 3px;
+    font-size: 17px;
   }
   .frame-id{
     color:  #6c757d;
     width: 100%;
     margin:0;
     margin-bottom: 3px;
+    font-size: 17px;
   }
   .frame-description{
     margin: 0;
     margin-bottom: 3px;
+    font-size: 20px;
+  }
+}
+.sidebarcard{
+  .card-title{
+    padding: 0 17px !important;
+  }
+  .card-heading{
+    margin: 0 !important;
+    padding-top: 20px;
+  }
+  .card-body{
+    padding: 0;
+    background-color: #f1f5f7;
+  }
+  .card-content{
+    padding: 12px 18px !important;
+  }
+  .heading-icom{
+    float: right;
   }
 }

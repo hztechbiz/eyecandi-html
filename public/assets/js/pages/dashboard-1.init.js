@@ -209,11 +209,11 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\projects\eyecandi\New folder\Horizontal\resources\js\pages\dashboard-1.init.js */"./resources/js/pages/dashboard-1.init.js");
-__webpack_require__(/*! D:\projects\eyecandi\New folder\Horizontal\resources\scss\bootstrap.scss */"./resources/scss/bootstrap.scss");
-__webpack_require__(/*! D:\projects\eyecandi\New folder\Horizontal\resources\scss\icons.scss */"./resources/scss/icons.scss");
-__webpack_require__(/*! D:\projects\eyecandi\New folder\Horizontal\resources\scss\app-rtl.scss */"./resources/scss/app-rtl.scss");
-module.exports = __webpack_require__(/*! D:\projects\eyecandi\New folder\Horizontal\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! F:\project\eyecandi-html\resources\js\pages\dashboard-1.init.js */"./resources/js/pages/dashboard-1.init.js");
+__webpack_require__(/*! F:\project\eyecandi-html\resources\scss\bootstrap.scss */"./resources/scss/bootstrap.scss");
+__webpack_require__(/*! F:\project\eyecandi-html\resources\scss\icons.scss */"./resources/scss/icons.scss");
+__webpack_require__(/*! F:\project\eyecandi-html\resources\scss\app-rtl.scss */"./resources/scss/app-rtl.scss");
+module.exports = __webpack_require__(/*! F:\project\eyecandi-html\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

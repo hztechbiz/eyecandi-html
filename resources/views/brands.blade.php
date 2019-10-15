@@ -18,7 +18,7 @@
 @endsection
 
 @section('content')
-    <div class="row" style="padding: 10px;background: #ffff;margin-bottom: 20px;">
+    <div class="row frame-topbar">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-4">
@@ -36,8 +36,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1 offset-5">
-                    <button class="btn btn-primary">Add New</button>
+                <div class="col-md-2 offset-4">
+                    <button class="btn btn-success float-right">Add New</button>
                 </div>
             </div>
         </div>
@@ -58,18 +58,18 @@
                         <h4 class="text-center brand-company" >Company ID: 450392</h4>
                     </div>
                 </div>
-                <div class="row mt-20" style="margin-top: 19px;">
+                <div class="row mt-20">
                     <div class="col-md-12">
-                        <button class="text-center btn btn-lg btn-primary" style="margin-left: 106px;">View Frames</button>
+                        <button class="text-center btn btn-md btn-primary btn-frame">View Frames</button>
                     </div>
                 </div>
                 <div class="row mt-20">
                     <div class="col-md-4">
-                        <h5 class="text-center" style="color:#6c757d">30-day Views</h5>
+                        <h5 class="text-center color-grey">30-day Views</h5>
                         <h4 class="text-center">345</h4>
                     </div>
                     <div class="col-md-4 offset-4">
-                        <h5 class="text-center" style="color:#6c757d">All Time Views</h5>
+                        <h5 class="text-center color-grey">All Time Views</h5>
                         <h4 class="text-center">34k</h4>
                     </div>
                 </div>
@@ -93,18 +93,53 @@
                         <h4 class="text-center brand-company" >Company ID: 450392</h4>
                     </div>
                 </div>
-                <div class="row mt-20" style="margin-top: 19px;">
+                <div class="row mt-20">
                     <div class="col-md-12">
-                        <button class="text-center btn btn-lg btn-primary" style="margin-left: 106px;">View Frames</button>
+                        <button class="text-center btn btn-md btn-primary btn-frame">View Frames</button>
                     </div>
                 </div>
                 <div class="row mt-20">
                     <div class="col-md-4">
-                        <h5 class="text-center" style="color:#6c757d">30-day Views</h5>
+                        <h5 class="text-center color-grey">30-day Views</h5>
                         <h4 class="text-center">345</h4>
                     </div>
                     <div class="col-md-4 offset-4">
-                        <h5 class="text-center" style="color:#6c757d">All Time Views</h5>
+                        <h5 class="text-center color-grey">All Time Views</h5>
+                        <h4 class="text-center">34k</h4>
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <img src="{{ url(asset('assets/images/image_brands.png')) }}">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-box brands">
+                <div class="row">
+                    <div class="image-brand"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center">Oakley</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="text-center brand-company">Company ID: 450392</h4>
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-md-12">
+                        <button class="text-center btn btn-md btn-primary btn-frame">View Frames</button>
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-md-4">
+                        <h5 class="text-center color-grey">30-day Views</h5>
+                        <h4 class="text-center">345</h4>
+                    </div>
+                    <div class="col-md-4 offset-4">
+                        <h5 class="text-center color-grey" >All Time Views</h5>
                         <h4 class="text-center">34k</h4>
                     </div>
                 </div>
@@ -128,18 +163,18 @@
                         <h4 class="text-center brand-company" >Company ID: 450392</h4>
                     </div>
                 </div>
-                <div class="row mt-20" style="margin-top: 19px;">
+                <div class="row mt-20">
                     <div class="col-md-12">
-                        <button class="text-center btn btn-lg btn-primary" style="margin-left: 106px;">View Frames</button>
+                        <button class="text-center btn btn-md btn-primary" style="margin-left: 106px;">View Frames</button>
                     </div>
                 </div>
                 <div class="row mt-20">
                     <div class="col-md-4">
-                        <h5 class="text-center" style="color:#6c757d">30-day Views</h5>
+                        <h5 class="text-center color-grey">30-day Views</h5>
                         <h4 class="text-center">345</h4>
                     </div>
                     <div class="col-md-4 offset-4">
-                        <h5 class="text-center" style="color:#6c757d">All Time Views</h5>
+                        <h5 class="text-center color-grey">All Time Views</h5>
                         <h4 class="text-center">34k</h4>
                     </div>
                 </div>
@@ -163,18 +198,18 @@
                         <h4 class="text-center brand-company" >Company ID: 450392</h4>
                     </div>
                 </div>
-                <div class="row mt-20" style="margin-top: 19px;">
+                <div class="row mt-20">
                     <div class="col-md-12">
-                        <button class="text-center btn btn-lg btn-primary" style="margin-left: 106px;">View Frames</button>
+                        <button class="text-center btn btn-md btn-primary btn-frame">View Frames</button>
                     </div>
                 </div>
                 <div class="row mt-20">
                     <div class="col-md-4">
-                        <h5 class="text-center" style="color:#6c757d">30-day Views</h5>
+                        <h5 class="text-center color-grey">30-day Views</h5>
                         <h4 class="text-center">345</h4>
                     </div>
                     <div class="col-md-4 offset-4">
-                        <h5 class="text-center" style="color:#6c757d">All Time Views</h5>
+                        <h5 class="text-center color-grey">All Time Views</h5>
                         <h4 class="text-center">34k</h4>
                     </div>
                 </div>
@@ -198,53 +233,18 @@
                         <h4 class="text-center brand-company" >Company ID: 450392</h4>
                     </div>
                 </div>
-                <div class="row mt-20" style="margin-top: 19px;">
+                <div class="row mt-20">
                     <div class="col-md-12">
-                        <button class="text-center btn btn-lg btn-primary" style="margin-left: 106px;">View Frames</button>
+                        <button class="text-center btn btn-md btn-primary btn-frame">View Frames</button>
                     </div>
                 </div>
                 <div class="row mt-20">
                     <div class="col-md-4">
-                        <h5 class="text-center" style="color:#6c757d">30-day Views</h5>
+                        <h5 class="text-center color-grey">30-day Views</h5>
                         <h4 class="text-center">345</h4>
                     </div>
                     <div class="col-md-4 offset-4">
-                        <h5 class="text-center" style="color:#6c757d">All Time Views</h5>
-                        <h4 class="text-center">34k</h4>
-                    </div>
-                </div>
-                <div class="row mt-20">
-                    <img src="{{ url(asset('assets/images/image_brands.png')) }}">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card-box brands">
-                <div class="row">
-                    <div class="image-brand"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="text-center">Oakley</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="text-center brand-company" >Company ID: 450392</h4>
-                    </div>
-                </div>
-                <div class="row mt-20" style="margin-top: 19px;">
-                    <div class="col-md-12">
-                        <button class="text-center btn btn-lg btn-primary" style="margin-left: 106px;">View Frames</button>
-                    </div>
-                </div>
-                <div class="row mt-20">
-                    <div class="col-md-4">
-                        <h5 class="text-center" style="color:#6c757d">30-day Views</h5>
-                        <h4 class="text-center">345</h4>
-                    </div>
-                    <div class="col-md-4 offset-4">
-                        <h5 class="text-center" style="color:#6c757d">All Time Views</h5>
+                        <h5 class="text-center color-grey">All Time Views</h5>
                         <h4 class="text-center">34k</h4>
                     </div>
                 </div>

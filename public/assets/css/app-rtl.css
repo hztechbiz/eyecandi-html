@@ -3410,7 +3410,7 @@ div.dt-button-info h2 {
 @font-face {
   font-family: "footable";
   src: url(/fonts/footable.eot?91c343856c56695b45993db2e1575519);
-  src: url(/fonts/footable.eot?91c343856c56695b45993db2e1575519?#iefix) format("embedded-opentype"), url(/fonts/footable.woff?634513dc791352157f12cb0a5ed8782b) format("woff"), url(/fonts/footable.ttf?2256ee07c7a1a366e5bac1c3fcb8e216) format("truetype"), url(/fonts/footable.svg?f6c396c95866da7ecdd6768ae48f0307#footable) format("svg");
+  src: url(/fonts/footable.eot?91c343856c56695b45993db2e1575519?#iefix) format("embedded-opentype"), url(/fonts/footable.woff?634513dc791352157f12cb0a5ed8782b) format("woff"), url(/fonts/footable.ttf?2256ee07c7a1a366e5bac1c3fcb8e216) format("truetype"), url(/fonts/footable.svg?5ea4e6add727b9d9003e0e728861b436#footable) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3418,7 +3418,7 @@ div.dt-button-info h2 {
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 @font-face {
     font-family: "footable";
-    src: url(/fonts/footable.svg?f6c396c95866da7ecdd6768ae48f0307#footable) format("svg");
+    src: url(/fonts/footable.svg?5ea4e6add727b9d9003e0e728861b436#footable) format("svg");
     font-weight: normal;
     font-style: normal;
 }
