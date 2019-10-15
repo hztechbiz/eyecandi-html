@@ -22,4 +22,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('pages-logout', 'DashboardController@logout');
     Route::get('home', 'DashboardController@index')->name('home');
     Route::get('{any}', 'MintonController@index')->name('page');
+	Route::get('brands/all', 'MintonController@getBrands')->name('brands');
 });

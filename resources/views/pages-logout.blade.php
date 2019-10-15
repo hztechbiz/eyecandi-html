@@ -44,7 +44,7 @@
 
                 <div class="row mt-3">
                     <div class="col-12 text-center">
-                        <p class="text-muted">Back to <a href="pages-login" class="text-muted font-weight-medium ml-1">Sign In</a></p>
+                        <p class="text-muted">Back to <a href="login" class="text-muted font-weight-medium ml-1">Sign In</a></p>
                     </div> <!-- end col -->
                 </div>
                 <!-- end row -->

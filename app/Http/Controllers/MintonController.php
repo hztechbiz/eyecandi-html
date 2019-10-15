@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\customClass\data_api;
 
 class MintonController extends Controller
 {
@@ -21,9 +22,11 @@ class MintonController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function getBrands()
     {
         //
+		$data = data_api::get_brands();
+		dd($data);
     }
 
     /**

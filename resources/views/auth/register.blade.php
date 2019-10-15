@@ -79,7 +79,7 @@
 
                 <div class="row mt-3">
                     <div class="col-12 text-center">
-                        <p class="text-muted">Already have account? <a href="pages-login" class="font-weight-medium ml-1">Sign In</a></p>
+                        <p class="text-muted">Already have account? <a href="login" class="font-weight-medium ml-1">Sign In</a></p>
                     </div> <!-- end col -->
                 </div>
                 <!-- end row -->
