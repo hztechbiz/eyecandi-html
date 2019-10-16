@@ -44,7 +44,7 @@
 <div class="row">
     <div class="col-md">
         <div class="card-box" style="height: 200px;">
-            <img class="maincardbody-logo" src="{{asset('assets/images/Logo-c.png')}}">
+            <img class="maincardbody-logo" src="{{asset('assets/images/logo-c.png')}}">
         </div>
     </div>
 </div>
