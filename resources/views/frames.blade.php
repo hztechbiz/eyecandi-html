@@ -18,8 +18,8 @@
 @endsection
 
 @section('content')
-    <div class="row frame-topbar">
-        <div class="col-md-12">
+    <div class="frame-topbar">
+        <div class="">
             <div class="row">
                 <div class="col-md-4">
                     <input name="" class="form-control" placeholder="Search...">
@@ -91,8 +91,18 @@
                             </h5>
                         </div>
                         <div class="card-body">
-                            <div id="cardCollpase1" class="collapse pt-3 show">
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                @foreach($ages as $age)                                    
                                 <div class="form-group">
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            {{ $age['AgeGroupValue'] }}
+                                        </label>
+                                    </div>
+                                </div>
+                                @endforeach
+                                {{-- <div class="form-group">
                                     <div class="checkbox">
                                         <input id="checkbox0" type="checkbox">
                                         <label for="checkbox0">
@@ -105,7 +115,7 @@
                                             Child
                                         </label>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -119,25 +129,18 @@
                         </div>
                         <div class="card-body">
 
-                            <div id="cardCollpase1" class="collapse pt-3 show">
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Male
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Female
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Unisex
-                                    </label>
-                                </div>
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                @foreach($genders as $gender)
+                                    <div class="form-group">                                
+                                        <div class="checkbox">
+                                            <input id="checkbox0" type="checkbox">
+                                            <label for="checkbox0">
+                                                {{ $gender['GenderGroupValue'] }}
+                                            </label>    
+                                        </div>
+                                    </div>
+                                @endforeach
+                            
                             </div>
                         </div>
                     </div>
@@ -151,31 +154,17 @@
                         </div>
                         <div class="card-body">
 
-                            <div id="cardCollpase1" class="collapse pt-3 show">
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Rayban
-                                    </label>
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                @foreach($brands as $brand)
+                                <div class="form-group"> 
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            {{ $brand['BrandName'] }}
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Oklay
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Blue Ribbon
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Airlock
-                                    </label>
-                                </div>
+                                @endforeach                        
                             </div>
                         </div>
                     </div>
@@ -189,41 +178,47 @@
                         </div>
                         <div class="card-body">
 
-                            <div id="cardCollpase1" class="collapse pt-3 show">
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Extra Small
-                                    </label>
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                <div class="form-group">                            
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Extra Small
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Small
-                                    </label>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Small
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Medium
-                                    </label>
+                                <div class="form-group">
+                                
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Medium
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Large
-                                    </label>
+                                <div class="form-group">                                
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Large
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Extra Large
-                                    </label>
+                                <div class="form-group">                                
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Extra Large
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -238,26 +233,18 @@
                         </div>
                         <div class="card-body">
 
-                            <div id="cardCollpase1" class="collapse pt-3 show">
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Black
-                                    </label>
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                @foreach($colors as $color)
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            {{ $color['ColorValue'] }}
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Blue
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Grey
-                                    </label>
-                                </div>
+                                @endforeach
+                                
                             </div>
                         </div>
                     </div>
@@ -270,27 +257,30 @@
                             </h5>
                         </div>
                         <div class="card-body">
-                            <div id="cardCollpase1" class="collapse pt-3 show">
-
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                <div class="form-group">
                                 <div class="checkbox">
                                     <input id="checkbox0" type="checkbox">
                                     <label for="checkbox0">
                                         Aviator
                                     </label>
                                 </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Cat-Eye
-                                    </label>
+                            </div>
+                                <div class="form-group">                            
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Cat-Eye
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Oval
-                                    </label>
+                                <div class="form-group">                                
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Oval
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -304,24 +294,31 @@
                             </h5>
                         </div>
                         <div class="card-body">
-                            <div id="cardCollpase1" class="collapse pt-3 show">
-
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                <div class="form-group">    
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Full Rim
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                 <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Full Rim
-                                    </label>
-                                </div><div class="checkbox">
                                     <input id="checkbox0" type="checkbox">
                                     <label for="checkbox0">
                                         Rimless
                                     </label>
-                                </div><div class="checkbox">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
                                     <input id="checkbox0" type="checkbox">
                                     <label for="checkbox0">
                                         Semi Rimless
                                     </label>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -335,42 +332,18 @@
                         </div>
                         <div class="card-body">
 
-                            <div id="cardCollpase1" class="collapse pt-3 show">
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Metal
-                                    </label>
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                @foreach($materials as $Material)
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            {{ $Material['MaterialValue'] }}
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        plastic
-                                    </label>
-                                </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Steel
-                                    </label>
-                                </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Titanium
-                                    </label>
-                                </div>
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Zyl
-                                    </label>
-                                </div>
+                                @endforeach
+                            
                             </div>
                         </div>
                     </div>
@@ -384,13 +357,14 @@
                         </div>
                         <div class="card-body">
 
-                            <div id="cardCollpase1" class="collapse pt-3 show">
-
-                                <div class="checkbox">
-                                    <input id="checkbox0" type="checkbox">
-                                    <label for="checkbox0">
-                                        Nosepads
-                                    </label>
+                            <div id="cardCollpase1" class="collapse card-content show">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Nosepads
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -403,7 +377,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame1.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>
@@ -415,7 +389,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame2.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>
@@ -427,7 +401,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame3.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>
@@ -439,7 +413,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame4.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>
@@ -451,7 +425,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame5.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>
@@ -463,7 +437,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame6.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>
@@ -475,7 +449,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame7.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>
@@ -487,7 +461,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame8.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>
@@ -499,7 +473,7 @@
                 <div class="col-md-4">
                     <div class="card-box frames">
                         <div class="row">
-                            <div class="image-frames"></div>
+                            <div class="image-frames"><img src="{{asset('assets/images/frames/frame9.png')}}"></div>
                         </div>
                         <div class="row mt-20">
                             <h4 class="frame-title">BrandName</h4>

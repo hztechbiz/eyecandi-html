@@ -14,19 +14,33 @@ class MintonController extends Controller
      */
     public function index($id)
     {
-        return view($id);
+        // return view($id);
     }
 
+    public function brands()
+    {
+        return view('brands');
+    }
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function getBrands()
+    public function frames()
     {
         //
-		$data = data_api::get_brands();
-		dd($data);
+		$brands = data_api::get_brands();
+        $brands = $brands['Brands'];
+        $ages = data_api::get_ages();
+        $ages = $ages['AgeGroups'];
+        $colors = data_api::get_colors();
+        $colors = $colors['Colors'];
+        $materials = data_api::get_materials();
+        $materials = $materials['Materials'];
+        $genders  = data_api::get_genders();
+        $genders  = $genders['GenderGroups'];
+		
+        return view('frames',compact('brands','ages','colors','materials','genders'));
     }
 
     /**

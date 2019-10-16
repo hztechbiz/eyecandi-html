@@ -9,12 +9,12 @@
                             <i class=" fas fa-rocket"></i>Dashboards </a>
                     </li>
                     <li class="">
-                        <a href="{{route('page',['brands'])}}">
+                        <a href="{{route('brands')}}">
                             <i class="fa fa-box"></i>Brands </a>
                     </li>
 
                     <li class="">
-                        <a href="{{route('page',['frames'])}}">
+                        <a href="{{route('frames')}}">
                             <i class=" fas fa-glasses"></i>Frames </a>
                     </li>
                     <li class="">

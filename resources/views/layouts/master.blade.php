@@ -26,7 +26,7 @@
       @yield('content')
   </div> 
 </div> 
-{{--@include('layouts.footer')--}}
+@include('layouts.footer')
 @include('layouts.rightbar')
 @include('layouts.footer-script')    
 </body>

@@ -44,7 +44,7 @@
 <div class="row">
     <div class="col-md">
         <div class="card-box" style="height: 200px;">
-            <p>This is dashboard placeholder</p>
+            <img class="maincardbody-logo" src="{{asset('assets/images/Logo-c.png')}}">
         </div>
     </div>
 </div>

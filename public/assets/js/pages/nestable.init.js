@@ -158,7 +158,7 @@ function ($) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! F:\project\eyecandi-html\resources\js\pages\nestable.init.js */"./resources/js/pages/nestable.init.js");
+module.exports = __webpack_require__(/*! D:\projects\eyecandi\New folder\Horizontal\eyecandi-html\resources\js\pages\nestable.init.js */"./resources/js/pages/nestable.init.js");
 
 
 /***/ })

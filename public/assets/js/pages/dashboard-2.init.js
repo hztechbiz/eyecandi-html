@@ -319,7 +319,7 @@ $('#world-map-markers').vectorMap({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! F:\project\eyecandi-html\resources\js\pages\dashboard-2.init.js */"./resources/js/pages/dashboard-2.init.js");
+module.exports = __webpack_require__(/*! D:\projects\eyecandi\New folder\Horizontal\eyecandi-html\resources\js\pages\dashboard-2.init.js */"./resources/js/pages/dashboard-2.init.js");
 
 
 /***/ })

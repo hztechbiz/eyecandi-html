@@ -3,13 +3,12 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				{{date('Y') - 1}} - {{ date('Y') }} &copy; Eyecandi by <a href="">HZTech</a>
+				{{ date('Y') }} © Eyecandi - A Heuro Product
 			</div>
 			<div class="col-md-6">
 				<div class="text-md-right footer-links d-none d-sm-block">
-					<a href="javascript:void(0);">About Us</a>
-					<a href="javascript:void(0);">Help</a>
-					<a href="javascript:void(0);">Contact Us</a>
+					<a href="javascript:void(0);">Support</a>
+					
 				</div>
 			</div>
 		</div>
