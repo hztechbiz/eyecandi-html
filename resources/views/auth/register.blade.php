@@ -11,7 +11,7 @@
 
                         <div class="text-center w-75 m-auto">
                             <a href="/">
-                                <span><img src="{{ URL::asset('assets/images/logo.png') }}" alt="" height="44"></span>
+                                <span><img src="{{ URL::asset('assets/images/logo-c.png') }}" alt="" height="44"></span>
                             </a>
                             <p class="text-muted mb-4 mt-3">Don't have an account? Create your own account, it takes less than a minute</p>
                         </div>
@@ -45,6 +45,15 @@
                                 @if($errors->has('password'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('password') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Practice Name</label>
+                                <input class="form-control @if($errors->has('practice_name')) is-invalid @endif"" type="text" name="practice_name" id="password" placeholder="What is Your Company Name?" />
+                                @if($errors->has('practice_name'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('practice_name') }}</strong>
                                 </span>
                                 @endif
                             </div>

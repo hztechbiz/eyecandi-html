@@ -11,7 +11,7 @@
 
                         <div class="text-center w-75 m-auto">
                             <a href="/">
-                                <span><img src="{{ URL::asset('assets/images/logo.png') }}" alt="" height="42"></span>
+                                <span><img src="{{ URL::asset('assets/images/logo-c.png') }}" alt="" height="42"></span>
                             </a>
                             <p class="text-muted mb-4 mt-3">Enter your new password below</p>
                         </div>
