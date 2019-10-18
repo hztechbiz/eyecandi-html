@@ -54,5 +54,6 @@ function preloader_fun()
 }
 
 </script>
-
+<script src="{{ url(asset('assets/libs/multiselect/multiselect.min.js'))}}"></script>
+<script src="{{ url(asset('assets/js/jquery.quicksearch.js'))}}"></script>
 @yield('script-bottom')

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\customClass\data_api;
 
 
 class DashboardController extends Controller
@@ -16,7 +17,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $brands = data_api::get_brands();
+        $brands = $brands['Brands'];
+        return view('index')->with('brands',$brands);
     }
 
     public function logout()

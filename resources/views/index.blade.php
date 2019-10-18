@@ -49,30 +49,17 @@
     </div>
 </div>
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
+                                <div class="modal-dialog" >
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title" id="myModalLabel">Brands</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Manage Your Brands</h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                         </div>
                                         <div class="modal-body">
-                                            <select multiple="multiple" class="multi-select" id="my_multi_select1" name="my_multi_select1[]" data-plugin="multiselect">
-                                                <option>Dallas Cowboys</option>
-                                                <option>New York Giants</option>
-                                                <option selected>Philadelphia Eagles</option>
-                                                <option selected>Washington Redskins</option>
-                                                <option>Chicago Bears</option>
-                                                <option>Detroit Lions</option>
-                                                <option>Green Bay Packers</option>
-                                                <option>Minnesota Vikings</option>
-                                                <option selected>Atlanta Falcons</option>
-                                                <option>Carolina Panthers</option>
-                                                <option>New Orleans Saints</option>
-                                                <option>Tampa Bay Buccaneers</option>
-                                                <option>Arizona Cardinals</option>
-                                                <option>St. Louis Rams</option>
-                                                <option>San Francisco 49ers</option>
-                                                <option>Seattle Seahawks</option>
+                                            <select multiple="multiple" class="multi-select" id="my_multi_select1" name="my_multi_select1[]" size="30" data-plugin="multiselect">
+                                                @foreach($brands as $brand)
+                                                    <option>{{ $brand['BrandName'] }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                         <div class="modal-footer">
@@ -90,4 +77,47 @@
 @endsection
 
 @section('script-bottom')
+<script>
+$(document).ready(function(){
+    $('#myModal').modal('show');
+    // $("#my_multi_select1").multiSelect();
+    $('#my_multi_select1').multiSelect({
+        selectableHeader: "<label>Available Brands</label><input type='text' class='search-input' autocomplete='off' placeholder='Search'>",
+        selectionHeader: "<label>My Brands</label><input type='text' class='search-input' autocomplete='off' placeholder='Search'>",
+        afterInit: function(ms){
+            var that = this,
+                $selectableSearch = that.$selectableUl.prev(),
+                $selectionSearch = that.$selectionUl.prev(),
+                selectableSearchString = '#'+that.$container.attr('id')+' .ms-elem-selectable:not(.ms-selected)',
+                selectionSearchString = '#'+that.$container.attr('id')+' .ms-elem-selection.ms-selected';
+
+            that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+                .on('keydown', function(e){
+                    if (e.which === 40){
+                        that.$selectableUl.focus();
+                        return false;
+                    }
+                });
+
+            that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+                .on('keydown', function(e){
+                    if (e.which == 40){
+                        that.$selectionUl.focus();
+                        return false;
+                    }
+                });
+        },
+        afterSelect: function(){
+            this.qs1.cache();
+            this.qs2.cache();
+        },
+        afterDeselect: function(){
+            this.qs1.cache();
+            this.qs2.cache();
+        }
+    });
+
+
+})
+</script>
 @endsection
