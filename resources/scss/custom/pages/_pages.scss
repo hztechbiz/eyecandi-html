@@ -92,3 +92,54 @@
 .modal-body{
   padding-left: 55px;
 }
+#myModal{
+  .modal-content{
+    .modal-body{
+      .ms-container{
+        .ms-selectable{
+          label{
+            display: block;
+          }
+          input{
+            width: 100%
+          }
+        }
+        .ms-selection{
+          label{
+            display: block;
+          }
+          input{
+            width: 100%
+          }
+        }
+      }
+    }
+  }
+}
+.store-wrapper{
+  background: url('/assets/images/store-background.png') no-repeat;
+  background-size: contain;
+}
+.store-sidebar{
+  .store-heading{
+      padding: 35px;
+      .store-button{
+        a{
+          margin-top: 26px;
+          color:#fff;
+        }
+        
+      }
+      h1{
+          color:#fff;
+        }
+    }
+  .card{
+    margin-bottom: 0px !important;
+    .card-body{
+      margin: 0 auto;
+    }
+
+    
+  }
+}

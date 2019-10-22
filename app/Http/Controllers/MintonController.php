@@ -43,12 +43,29 @@ class MintonController extends Controller
         return view('frames',compact('brands','ages','colors','materials','genders'));
     }
 
+    
+    public function stores(){
+        $brands = data_api::get_brands();
+        $brands = $brands['Brands'];
+        $ages = data_api::get_ages();
+        $ages = $ages['AgeGroups'];
+        $colors = data_api::get_colors();
+        $colors = $colors['Colors'];
+        $materials = data_api::get_materials();
+        $materials = $materials['Materials'];
+        $genders  = data_api::get_genders();
+        $genders  = $genders['GenderGroups'];
+        return view('stores',compact('brands','ages','colors','materials','genders'));
+    }
+
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+
     public function store(Request $request)
     {
         //

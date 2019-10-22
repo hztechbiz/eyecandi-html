@@ -23,4 +23,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('home', 'DashboardController@index')->name('home');
     Route::get('brands', 'MintonController@brands')->name('brands');
 	Route::get('frames', 'MintonController@frames')->name('frames');
+	Route::get('stores', 'MintonController@stores')->name('stores');
 });
