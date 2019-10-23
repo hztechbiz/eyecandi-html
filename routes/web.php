@@ -25,3 +25,5 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('frames', 'MintonController@frames')->name('frames');
 	Route::get('stores', 'MintonController@stores')->name('stores');
 });
+
+Route::get('singleframe', 'MintonController@single_frame')->name('singleframe');

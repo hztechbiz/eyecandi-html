@@ -58,6 +58,16 @@ class MintonController extends Controller
         return view('stores',compact('brands','ages','colors','materials','genders'));
     }
 
+    public function single_frame()
+    {
+        $frame = data_api::get_frame(116808);
+        $frame = $frame['Styles'];
+        // dd($frame); 
+        // $images = data_api::get_images($frame['ManufacturerFramesMasterID'],$frame['StyleFramesMasterID'],'Small');
+        // dd($images);
+        return view('singleframe')->with('frame',$frame);
+    }
+
     /**
      * Store a newly created resource in storage.
      *

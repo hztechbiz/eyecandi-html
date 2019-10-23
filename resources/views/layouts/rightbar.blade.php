@@ -14,8 +14,8 @@
                         <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
                     </div>
 
-                    <h5><a href="javascript: void(0);">{{ Auth::user()->name }}</a> </h5>
-                    <p class="text-muted mb-0"><small>{{ Auth::user()->email }}</small></p>
+                    {{-- <h5><a href="javascript: void(0);">{{ Auth::user()->name }}</a> </h5> --}}
+                    {{-- <p class="text-muted mb-0"><small>{{ Auth::user()->email }}</small></p> --}}
                 </div>
             </div> <!-- end slimscroll-menu-->
         </div>
