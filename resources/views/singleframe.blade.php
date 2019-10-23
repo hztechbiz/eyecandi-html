@@ -27,7 +27,7 @@
                     <div class="image-frames"><img src="http://testapi.framesdata.com:80/api/images?auth=4046ecc3-bc75-4bdf-ba48-e11ef8c8a0c1&size=XL&id=116807&vto=F"></div>
                     
                 </div>
-            </div>
+            
             <div class="row">
                 @foreach($frame as $key => $value)
             <div class="col-md-10">
