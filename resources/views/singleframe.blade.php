@@ -21,8 +21,11 @@
     <div class="frame-topbar">
         {{-- <div class=""> --}}
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="image-frames"><img src="http://testapi.framesdata.com/api/images?auth=4046ecc3-bc75-4bdf-ba48-e11ef8c8a0c1&size=Large&id=116807"></div>
+                </div class="col-md-6">
+                    <div class="image-frames"><img src="http://testapi.framesdata.com:80/api/images?auth=4046ecc3-bc75-4bdf-ba48-e11ef8c8a0c1&size=XL&id=116807&vto=F"></div>
+                    
                 </div>
             </div>
             <div class="row">
